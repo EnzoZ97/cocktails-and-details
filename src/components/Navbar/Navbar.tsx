@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="container-fluid p-2 bg-color">
             <div className="d-flex justify-content-center">
                 <Link to='/' className="link">
-                    <h2 className="text-center navbar-title">Coiltails</h2>
+                    <h2 className="text-center navbar-title">Cocktails</h2>
                 </Link>
             </div>  
         </div>
