@@ -28,6 +28,8 @@ const Cocktails = () => {
         dispatch(updateUrl_Name(name));
     }
 
+    console.log(list);
+
     return (
         <div className="Cocktails mt-5 container-fluid">
             <div className="d-flex justify-content-center">
@@ -37,8 +39,9 @@ const Cocktails = () => {
                     <button className="btn mt-3 btn-search " onClick={() => updateCocktailsList()}>Search Cocktail</button>
                 </div>
             </div>
-            <div className="mt-5 container-fluid d-flex flex-wrap justify-content-center">
+            <div className="mt-5 mb-5 container-fluid d-flex flex-wrap justify-content-center">
                 {
+                    list != null ?
                     list.map((elem : any) => (
                         <div className="card m-2  cocktail-box" key={elem.idDrink}>
                             <img src={elem.strDrinkThumb} className="card-img-top" />
@@ -50,6 +53,10 @@ const Cocktails = () => {
                             </div>
                         </div>
                     ))
+                    :
+                    <div className="error mt-5">
+                        <h1>There are no cocktails with this name, please try with other name</h1>
+                    </div>
                 }
             </div>
         </div>

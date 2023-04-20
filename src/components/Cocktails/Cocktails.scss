@@ -37,4 +37,10 @@
             }
         }
     }
+
+    .error{
+        font-family: sans-serif;
+        letter-spacing: 2px;
+        color: v.$color--red;
+    }
 }

@@ -190,7 +190,7 @@ const More_Information = () => {
                             <h1 className="cart-title title"> { elem.strDrink } </h1>
                             <img  src={elem.strDrinkThumb} className="card-img image" />
                             <div className="cart-body mt-3">
-                                <div className="ingredients  d-flex flex-column justify-content-center">
+                                <div className="ingredients d-flex flex-column justify-content-center">
                                     <p className="ingredients-title ">Ingredients</p>
                                     {
                                         ingredients(elem)
