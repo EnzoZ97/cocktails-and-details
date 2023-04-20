@@ -19,7 +19,7 @@ const Cocktails = () => {
     },[dispatch]);
 
     function updateCocktailsList():void{
-        dispatch(setName(cocktail_Name));
+        dispatch(setName(cocktail_Name.toLowerCase()));
         dispatch(fetchAllCocktails(cocktail_Name));
     }
 
