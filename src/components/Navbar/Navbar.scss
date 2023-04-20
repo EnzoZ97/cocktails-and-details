@@ -1,0 +1,20 @@
+@use '../../Style/Variables.scss' as v;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+.bg-color{
+    background-color: v.$color--red;
+
+    .link{
+        color: black;
+        text-decoration: none;
+    
+        .navbar-title{
+            font-size: 1.3rem;
+            font-family: 'Roboto Mono', monospace;
+            letter-spacing: .3rem;
+        }
+    }
+}
+
+

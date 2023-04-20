@@ -1,0 +1,40 @@
+@use '../../Style/Variables.scss' as v;
+
+.Cocktails{
+    .form{
+        width: 500px;
+
+        input{
+            border: 2px solid skyblue;
+            font-size: 1.1rem;
+            font-family: v.$font-text;
+        }
+
+        .btn-search{
+            border: 2px solid v.$color--orangered;
+            font-size: 1.1rem;
+            font-family: v.$font-text;
+            
+            &:hover{
+                background-color: v.$color--orangered;
+                color: white;
+            }
+        }
+    }
+
+    .cocktail-box{
+        width: 300px;
+        box-shadow: 3px 5px 8px #888;
+
+        .btn-box{
+            border: 2px solid v.$color--orangered;
+            font-size: 1.1rem;
+            font-family: v.$font-text;
+            
+            &:hover{
+                background-color: v.$color--orangered;
+                color: white;
+            }
+        }
+    }
+}
